@@ -2,12 +2,11 @@ version: 1
 configuration:
   has_webserver: true
   readonly_paths:
-    - src/App.tsx
-    - public/mockServiceWork.js
+    - public/mockServiceWorker.js
   ide_config:
     project_menu:
-      run: yarn start
+      run: yarn dev
       install: yarn install
       test: yarn test
     default_open_files:
-      - hackerrank.yml
+      - src/App.tsx

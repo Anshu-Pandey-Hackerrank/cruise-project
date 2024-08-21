@@ -4,6 +4,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predev": "yarn install",
+    "prestart": "yarn install",
     "build": "tsc && vite build",
     "clean": "rimraf node_modules dist",
     "dev": "vite",
@@ -14,6 +16,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@types/react-router-dom": "^5.3.3",
     "numeral": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
