@@ -13,4 +13,5 @@ export default defineConfig({
   },
   plugins: [react(), tsconfigPaths()],
   customLogger: createLogger('info', { prefix: '[coderpad]' }),
+  publicDir: 'public',
 })
