@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    --color-gray-50: #fafafa;
+    --color-gray-100: #f3f3f6;
+    --color-gray-200: #eeeeee;
+    --color-gray-300: #d2d6dd;
+    --color-gray-400: #bdbdbd;
+    --color-gray-500: #9e9e9e;
+    --color-gray-600: #757575;
+    --color-gray-700: #616161;
+    --color-gray-800: #424242;
+    --color-gray-900: #212121;
+
+    --color-primary-100: #f6c5c4;
+    --color-primary-200: #ed8b88;
+    --color-primary-300: #e4514d;
+    --color-primary-400: #ce231f;
+    --color-primary-500: #931916;
+
+    --color-bg-default: var(--color-white);
+    --color-bg-page: var(--color-gray-50);
+    --color-bg-paper: var(--color-white);
+    --color-bg-paper-hover: var(--color-gray-100);
+
+    /* text colors on primary background */
+    --color-text-primary-default: var(--color-white);
+
+    --font-family-inter: Inter;
+    --font-family-sans: var(--font-family-inter);
+  }
+}
+
+/* Examples of using raw CSS (used in OrderView.tsx) */
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.heading-2 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1rem; /* 16px */
+}
+
+.button {
+  background-color: var(--color-primary-500);
+  color: var(--color-text-primary-default);
+}
